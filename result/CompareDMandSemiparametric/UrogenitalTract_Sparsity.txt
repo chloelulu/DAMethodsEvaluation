@@ -1,0 +1,29 @@
+
+> cat('Raw median, max, min \n')
+Raw median, max, min 
+
+> round(median(zero2),2);cat(paste0('(',round(min(zero2),2),'-',round(max(zero2),2),')'),'\n');
+[1] 0.87
+(0.73-0.96) 
+
+> cat('DM \n')
+DM 
+
+> round(median(zero3),2);cat(paste0('(',round(min(zero3),2),'-',round(max(zero3),2),')'),'\n');
+[1] 0.84
+(0.81-0.87) 
+
+> cat('Semi \n')
+Semi 
+
+> round(median(zero4),2);cat(paste0('(',round(min(zero4),2),'-',round(max(zero4),2),')'),'\n');
+[1] 0.87
+(0.77-0.95) 
+
+> cat('raw vs DM:',wilcox.test(zero2,zero3)$p.value,'\n')
+raw vs DM: 2.404917e-39 
+
+> cat('raw vs Semi:',wilcox.test(zero2,zero4)$p.value,'\n')
+raw vs Semi: 0.7499929 
+
+> sink()

@@ -1,0 +1,108 @@
+dataset_name,taxa number,sample size,study_condition,body_site,disease,age_category,gender,country,sequencing_platform,PMID
+AsnicarF_2017_1,257,16,control,stool;milk,healthy,newborn;adult,female;male,ITA,IlluminaHiSeq,28144631
+AsnicarF_2017_2,257,16,control,stool;milk,healthy,newborn;adult,female;male,ITA,IlluminaHiSeq,28144631
+BritoIL_2016,698,1061,Fiji;USA,oralcavity;stool,healthy,newborn;child;schoolage;adult;senior,male;female,FJI,IlluminaHiSeq,27409808
+Castro_NallarE_2015,224,32,schizophrenia;control,oralcavity,schizophrenia;T2D;schizophrenia;;CD;schizophrenia,adult,female;male,USA,IlluminaHiSeq,26336637
+ChengpingW_2017,483,211,AS;control,stool,RA,adult;schoolage;senior,male;female,CHN,IlluminaHiSeq,28750650
+ChngKR_2016,321,78,AD;control,skin,AD;AR;;AD;AD;AR;asthma;AD;asthma;AR;AR;asthma,adult,male;female,SGP;IDN;CHN;MYS;BRN,IlluminaHiSeq,27562258
+DavidLA_2015,273,49,infectiousgastroenteritis;control,stool,infectiousgastroenteritis;healthy,child;adult,NA,BGD,IlluminaHiSeq,25991682
+DhakanDB_2019,233,110,Bhopal;Kasaragod,stool,healthy,adult;child;schoolage;senior;newborn,female;male,IND,IlluminaNextSeq,30698687
+FengQ_2015,449,107,CRC;control,stool,CRC;fatty_liver;hypertension;fatty_liver;hypertension;;adenoma;fatty_liver;hypertension;fatty_liver;fatty_liver;T2D;hypertension;adenoma;fatty_liver;CRC;hypertension;adenoma;CRC;fatty_liver;T2D;hypertension;CRC;hypertension;T2D;hypertension;adenoma;T2D;adenoma;T2D;hypertension;adenoma;hypertension;CRC;fatty_liver;CRC;T2D;hypertension;fatty_liver;T2D;adenoma;fatty_liver;T2D;hypertension;adenoma;fatty_liver;T2D,adult;senior,male;female,AUT,IlluminaHiSeq,25758642
+FengQ_2015_1,449,108,control;adenoma,stool,CRC;fatty_liver;hypertension;fatty_liver;hypertension;;adenoma;fatty_liver;hypertension;fatty_liver;fatty_liver;T2D;hypertension;adenoma;fatty_liver;CRC;hypertension;adenoma;CRC;fatty_liver;T2D;hypertension;CRC;hypertension;T2D;hypertension;adenoma;T2D;adenoma;T2D;hypertension;adenoma;hypertension;CRC;fatty_liver;CRC;T2D;hypertension;fatty_liver;T2D;adenoma;fatty_liver;T2D;hypertension;adenoma;fatty_liver;T2D,adult;senior,male;female,AUT,IlluminaHiSeq,25758642
+FerrettiP_2018,511,215,control,stool;oralcavity;vagina;skin,healthy,newborn;adult,NA,ITA,IlluminaHiSeq,30001516
+HanniganGD_2017_2,233,55,control;adenoma,stool,CRC;healthy;adenoma,adult,NA,USA;CAN,IlluminaHiSeq,unpublished
+HansenLBS_2018,375,208,Low-gluten diet;Low-gluten diet,stool,healthy,adult;senior,male;female,DNK,IlluminaHiSeq,30425247
+Heitz_BuschartA_2016,313,53,T1D;control,stool,T1D;coeliac;gestational_diabetes;CMV;T1D;coeliac;IBD;hepatitis,adult;child;schoolage,male;female,LUX,IlluminaHiSeq,27723761
+JieZ_2017,487,385,ACVD;control,stool,ACVD;healthy,senior;adult;,male;female;,CHN,IlluminaHiSeq,29018189
+KarlssonFH_2013,344,96,control;T2D,stool,IGT;T2D,senior,female,SWE;DEU;FRA;NOR;DNK;SVK;HUN;EST;FIN;ISL,IlluminaHiSeq,23719380
+KarlssonFH_2013_1,344,92,IGT;control,stool,IGT;T2D,senior,female,SWE;DEU;FRA;NOR;DNK;SVK;HUN;EST;FIN;ISL,IlluminaHiSeq,23719380
+KieserS_2018,375,208,control;acute_diarrhoea,stool,healthy;acute_diarrhoea,child,NA,BGD,IlluminaHiSeq,29786169
+KosticAD_2015,278,120,control;T1D,stool,healthy;T1D,newborn;child,male;female;,FIN;EST;,IlluminaHiSeq,25662751
+LeChatelierE_2013,374,292,obese;non-obese,stool,NA,adult,NA,DNK,IlluminaHiSeq,23985870
+LiJ_2014,454,249,control,stool,healthy,adult,NA,CHN;DNK;ESP,IlluminaHiSeq,24997786
+LiJ_2017,323,140,hypertension;control,stool,hypertension;healthy,adult,NA,CHN,IlluminaHiSeq,28143587
+LiJ_2017_1,323,97,pre-hypertension;control,stool,hypertension;healthy,adult,NA,CHN,IlluminaHiSeq,28143587
+LiSS_2016,253,45,FMT;control,stool,metabolic_syndrome;healthy,adult,male,NLD,IlluminaHiSeq,27126044
+LiSS_2016_1,253,15,metabolic_syndrome;control,stool,metabolic_syndrome;healthy,adult,male,NLD,IlluminaHiSeq,27126044
+LiuW_2016,644,257,control,stool,NA,adult,NA,MNG;USA,IlluminaHiSeq,27708392
+LoombaR_2017,331,86,advanced;moderate,stool,fatty_liver,adult;senior,NA,USA,IlluminaHiSeq,28467925
+NielsenHB_2014,460,396,control;IBD,stool,healthy;IBD,adult;senior;;schoolage,NA,DNK;ESP,IlluminaHiSeq,24997787
+Obregon_TitoAJ_2015,305,58,control,stool,healthy,child;schoolage;adult;;newborn,female;;male,PER;USA,IlluminaHiSeq,25807110
+PehrssonE_2016,281,191,control,stool,NA,adult;child;schoolage;newborn;senior,male;female;,PER;SLV,IlluminaNextSeq;IlluminaHiSeq,27172044
+QinJ_2012,469,344,control;T2D,stool,T2D,adult;;senior;schoolage,female;male;,CHN,IlluminaHiSeq,23023125
+QinN_2014,453,237,control;cirrhosis,stool,HBV;cirrhosis;HBV;ascites;cirrhosis;ascites;cirrhosis;schistosoma;HEV;ascites;cirrhosis;schistosoma;HBV;HEV;cirrhosis;cirrhosis;HBV;HDV;ascites;cirrhosis;ascites;cirrhosis;HBV;HEV;ascites;cirrhosis;HBV;ascites;cirrhosis;schistosoma;HE;HEV;cirrhosis;HBV;HDV;cirrhosis;HBV;HE;cirrhosis;HCV;cirrhosis;ascites;cirrhosis;pbcirrhosis;ascites;cirrhosis;wilson;HBV;ascites;cirrhosis;wilson,adult;senior;schoolage,female;male,CHN,IlluminaHiSeq,25079328
+RampelliS_2015,206,38,control,stool,NA,adult;child;schoolage;senior,female;male,TZA;ITA,IlluminaHiSeq,25981789
+RaymondF_2016,253,72,control;cephalosporins,stool,healthy,adult,female;male,CAN,IlluminaHiSeq,26359913
+ShiB_2015,219,48,periodontitis;SRP,oralcavity,periodontitis,NA,NA,USA,IlluminaHiSeq,25691586
+TettAJ_2016,285,97,control;psoriasis,skin,psoriasis;psoriasis;arthritis;arthritis,adult;senior,male;female,ITA,IlluminaHiSeq,28649415
+TettAJ_2019_ab,319,112,control,stool,healthy,adult;child;schoolage;newborn,NA,TZA;GHA,IlluminaHiSeq,unpublished
+TettAJ_2019_bc,319,112,control,stool,healthy,adult;child;schoolage;newborn,NA,GHA;ETH,IlluminaHiSeq,unpublished
+TettAJ_2019_ac,324,94,control,stool,healthy,child;adult;newborn,NA,ETH;TZA,IlluminaHiSeq,unpublished
+ThomasAM_2018a,362,53,control;CRC,stool,metastases;adenoma;CRC;hypercholesterolemia;adenoma;hypertension;hypercholesterolemia;adenoma;hypercholesterolemia;hypertension;;CRC;CRC;hypertension;CRC;cholesterolemia;hypertension;metastases;adenoma;T2D;adenoma;metastases;CRC;hypertension;hypercholesterolemia;adenoma;hypercholesterolemia;metastases;CRC;metastases,senior;adult,female;male,ITA,IlluminaHiSeq,unpublished
+ThomasAM_2018a_1,362,51,control;adenoma,stool,metastases;adenoma;CRC;hypercholesterolemia;adenoma;hypertension;hypercholesterolemia;adenoma;hypercholesterolemia;hypertension;;CRC;CRC;hypertension;CRC;cholesterolemia;hypertension;metastases;adenoma;T2D;adenoma;metastases;CRC;hypertension;hypercholesterolemia;adenoma;hypercholesterolemia;metastases;CRC;metastases,senior;adult,female;male,ITA,IlluminaHiSeq,unpublished
+ThomasAM_2018b,360,60,CRC;control,stool,CRC;healthy,adult,NA,ITA,IlluminaHiSeq,unpublished
+VatanenT_2016,452,785,control;bronchitis;otitis;respiratoryinf;tonsillitis;stomatitis;infectiousgastroenteritis;salmonellosis;skininf;pneumonia;sepsis;fever;NK;cystitis;cough;pyelonephritis;pyelonefritis;suspinf,stool,healthy;bronchitis;otitis;respiratoryinf;tonsillitis;stomatitis;infectiousgastroenteritis;salmonellosis;skininf;pneumonia;sepsis;fever;NK;cystitis;cough;pyelonephritis;pyelonefritis;suspinf,newborn;child,female;male,RUS;EST;FIN,IlluminaHiSeq,27259157
+VincentC_2016,431,229,control;CDI,stool,pneumonia;abdominalhernia;CDI;cellulitis;gangrene;osteoarthritis;CDI;pneumonia;CDI;cellulitis;CDI;osteoarthritis;CDI;ureteralstone,senior;adult,female;male,CAN,IlluminaHiSeq,26975510
+VogtmannE_2016,412,104,control;CRC,stool,CRC,adult;senior,male;;female,USA,IlluminaHiSeq,27171425
+YeZ_2018,235,65,control;BD,stool,healthy;BD,adult;senior,female;male,CHN,IlluminaHiSeq,30077182
+YuJ_2015,417,128,CRC;control,stool,CRC;,senior,NA,CHN,IlluminaHiSeq,26408641
+ZellerG_2014,486,157,control;CRC;adenoma,stool,healthy;CRC;adenoma,senior;adult,female;male,FRA;DEU,IlluminaHiSeq,25432777
+ZellerG_2014_1,486,108,control;CRC;adenoma,stool,healthy;CRC;adenoma,senior;adult,female;male,FRA;DEU,IlluminaHiSeq,25432777
+HanniganGD_2017,233,55,NA,NA,NA,NA,NA,NA,NA,NA
+Airways_Skin,18817,825,Airways;Skin,NA,NA,NA,NA,NA,NA,NA
+Airways_Urogenital_Tract,12900,425,Airways;Urogenital Tract,NA,NA,NA,NA,NA,NA,NA
+Attached_Keratinized_Gingiva_Palatine_Tonsils,16532,367,Attached Keratinized Gingiva;Palatine Tonsils,NA,NA,NA,NA,NA,NA,NA
+Attached_Keratinized_Gingiva_Subgingival_Plaque,15574,364,Attached Keratinized Gingiva;Subgingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Attached_Keratinized_Gingiva_Supragingival_Plaque,14974,370,Attached Keratinized Gingiva;Supragingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Attached_Keratinized_Gingiva_Throat,17033,351,Attached Keratinized Gingiva;Throat,NA,NA,NA,NA,NA,NA,NA
+Buccal_Mucosa_Attached_Keratinized_Gingiva,15074,364,Buccal Mucosa;Attached Keratinized Gingiva,NA,NA,NA,NA,NA,NA,NA
+Buccal_Mucosa_Palatine_Tonsils,16992,369,Buccal Mucosa;Palatine Tonsils,NA,NA,NA,NA,NA,NA,NA
+Buccal_Mucosa_Subgingival_Plaque,16932,366,Buccal Mucosa;Subgingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Buccal_Mucosa_Supragingival_Plaque,16500,372,Buccal Mucosa;Supragingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Buccal_Mucosa_Throat,17574,353,Buccal Mucosa;Throat,NA,NA,NA,NA,NA,NA,NA
+Gastrointestinal_Tract_Airways,15903,348,Gastrointestinal Tract;Airways,NA,NA,NA,NA,NA,NA,NA
+Gastrointestinal_Tract_Oral,26686,1809,Gastrointestinal Tract;Oral,NA,NA,NA,NA,NA,NA,NA
+Gastrointestinal_Tract_Skin,21356,851,Gastrointestinal Tract;Skin,NA,NA,NA,NA,NA,NA,NA
+Gastrointestinal_Tract_Urogenital_Tract,11344,451,Gastrointestinal Tract;Urogenital Tract,NA,NA,NA,NA,NA,NA,NA
+Hard_Palate_Attached_Keratinized_Gingiva,15903,359,Hard Palate;Attached Keratinized Gingiva,NA,NA,NA,NA,NA,NA,NA
+Hard_Palate_Buccal_Mucosa,16586,361,Hard Palate;Buccal Mucosa,NA,NA,NA,NA,NA,NA,NA
+Hard_Palate_Palatine_Tonsils,17047,364,Hard Palate;Palatine Tonsils,NA,NA,NA,NA,NA,NA,NA
+Hard_Palate_Subgingival_Plaque,18105,361,Hard Palate;Subgingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Hard_Palate_Supragingival_Plaque,17772,367,Hard Palate;Supragingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Hard_Palate_Throat,17156,348,Hard Palate;Throat,NA,NA,NA,NA,NA,NA,NA
+Left_Retroauricular_Crease_Left_Antecubital_Fossa,14381,331,Left Retroauricular Crease;Left Antecubital Fossa,NA,NA,NA,NA,NA,NA,NA
+Left_Retroauricular_Crease_Right_Antecubital_Fossa,14250,332,Left Retroauricular Crease;Right Antecubital Fossa,NA,NA,NA,NA,NA,NA,NA
+Left_Retroauricular_Crease_Right_Retroauricular_Crease,12139,373,Left Retroauricular Crease;Right Retroauricular Crease,NA,NA,NA,NA,NA,NA,NA
+Malawi_Venezuela,11905,213,,NA,NA,NA,NA,NA,NA,NA
+Mid_Vagina_Posterior_Fornix,3856,177,Mid Vagina;Posterior Fornix,NA,NA,NA,NA,NA,NA,NA
+Oral_Airways,25683,1783,Oral;Airways,NA,NA,NA,NA,NA,NA,NA
+Oral_Skin,28416,2286,Oral;Skin,NA,NA,NA,NA,NA,NA,NA
+Oral_Urogenital_Tract,23829,1886,Oral;Urogenital Tract,NA,NA,NA,NA,NA,NA,NA
+Palatine_Tonsils_Subgingival_Plaque,17717,369,Palatine Tonsils;Subgingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Palatine_Tonsils_Supragingival_Plaque,17504,375,Palatine Tonsils;Supragingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Palatine_Tonsils_Throat,17227,356,Palatine Tonsils;Throat,NA,NA,NA,NA,NA,NA,NA
+Right_Retroauricular_Crease_Left_Antecubital_Fossa,14051,332,Right Retroauricular Crease;Left Antecubital Fossa,NA,NA,NA,NA,NA,NA,NA
+Right_Retroauricular_Crease_Right_Antecubital_Fossa,13860,333,Right Retroauricular Crease;Right Antecubital Fossa,NA,NA,NA,NA,NA,NA,NA
+Saliva_Attached_Keratinized_Gingiva,16509,343,Saliva;Attached Keratinized Gingiva,NA,NA,NA,NA,NA,NA,NA
+Saliva_Buccal_Mucosa,17073,345,Saliva;Buccal Mucosa,NA,NA,NA,NA,NA,NA,NA
+Saliva_Hard_Palate,17216,340,Saliva;Hard Palate,NA,NA,NA,NA,NA,NA,NA
+Saliva_Palatine_Tonsils,17054,348,Saliva;Palatine Tonsils,NA,NA,NA,NA,NA,NA,NA
+Saliva_Subgingival_Plaque,17547,345,Saliva;Subgingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Saliva_Supragingival_Plaque,17252,351,Saliva;Supragingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Saliva_Throat,17571,332,Saliva;Throat,NA,NA,NA,NA,NA,NA,NA
+Saliva_Tongue_Dorsum,16036,352,Saliva;Tongue Dorsum,NA,NA,NA,NA,NA,NA,NA
+Skin_Urogenital_Tract,19062,928,Skin;Urogenital Tract,NA,NA,NA,NA,NA,NA,NA
+Supragingival_Plaque_Subgingival_Plaque,13655,372,Supragingival Plaque;Subgingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Throat_Subgingival_Plaque,18755,353,Throat;Subgingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Throat_Supragingival_Plaque,18515,359,Throat;Supragingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Tongue_Dorsum_Attached_Keratinized_Gingiva,15419,371,Tongue Dorsum;Attached Keratinized Gingiva,NA,NA,NA,NA,NA,NA,NA
+Tongue_Dorsum_Buccal_Mucosa,16158,373,Tongue Dorsum;Buccal Mucosa,NA,NA,NA,NA,NA,NA,NA
+Tongue_Dorsum_Hard_Palate,15857,368,Tongue Dorsum;Hard Palate,NA,NA,NA,NA,NA,NA,NA
+Tongue_Dorsum_Palatine_Tonsils,15471,376,Tongue Dorsum;Palatine Tonsils,NA,NA,NA,NA,NA,NA,NA
+Tongue_Dorsum_Subgingival_Plaque,17053,373,Tongue Dorsum;Subgingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Tongue_Dorsum_Supragingival_Plaque,16605,379,Tongue Dorsum;Supragingival Plaque,NA,NA,NA,NA,NA,NA,NA
+Tongue_Dorsum_Throat,16088,360,Tongue Dorsum;Throat,NA,NA,NA,NA,NA,NA,NA
+USA_Malawi,11905,431,USA;Malawi,NA,NA,NA,NA,NA,NA,NA
+USA_Venezuela,11905,416,USA;Venezuela,NA,NA,NA,NA,NA,NA,NA
+Vaginal_Introitus_Mid_Vagina,4632,176,Vaginal Introitus;Mid Vagina,NA,NA,NA,NA,NA,NA,NA
+Vaginal_Introitus_Posterior_Fornix,4483,175,Vaginal Introitus;Posterior Fornix,NA,NA,NA,NA,NA,NA,NA

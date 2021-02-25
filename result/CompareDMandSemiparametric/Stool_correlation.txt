@@ -1,0 +1,11 @@
+   relation               DM                  raw               dirchlet        
+ Length:4382742     Min.   :-0.2877723   Min.   :-0.352936   Min.   :-0.318977  
+ Class :character   1st Qu.:-0.0417516   1st Qu.:-0.050011   1st Qu.:-0.046636  
+ Mode  :character   Median :-0.0031396   Median :-0.004253   Median :-0.003757  
+                    Mean   :-0.0002173   Mean   : 0.006145   Mean   : 0.003920  
+                    3rd Qu.: 0.0378920   3rd Qu.: 0.048430   3rd Qu.: 0.044101  
+                    Max.   : 0.3792509   Max.   : 0.971263   Max.   : 0.867905  
+0 
+DM: (-0.29-0.38)
+raw: (-0.35-0.97)
+Semi: (-0.32-0.87)
