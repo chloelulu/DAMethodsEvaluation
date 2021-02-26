@@ -4,7 +4,7 @@ setwd('/Users/m216453/Documents/Mayo_Research/SemiSimulation/0925/sim/new/')
 setwd('/Users/m216453/Documents/Mayo_Research/SemiSimulation/DAMethodsEvaluation/data/')
 source('~/Documents/Mayo_project/Code/DailyCode.R')
 
-filename = 'allC10';dir = 'SimulationEvaluation/';type = 'allC';lineplot =F; boxplot =F;barplot =T;summary.plot = T;na.plot = F; nas = NULL;fdr = 0.05;
+filename = 'allD0';dir = 'SimulationEvaluation/';type = 'allD';lineplot =F; boxplot =F;barplot =T;summary.plot = T;na.plot = F; nas = NULL;fdr = 0.05;
 covariate.type ='binary';output = '../result/SimulationEvaluation/'
 
 
@@ -700,34 +700,18 @@ plot_sim <- function(filename = 'allC1',dir = 'SimulationEvaluation/',type = 'al
       geom_bar(position = position_dodge2(width = 0.7, preserve = "single"), stat="identity", width = 0.7) +
       geom_errorbar(aes(ymax=ymax, ymin=ymin, linetype = NULL),  width=0.7, size = 0.2,position=position_dodge2(.7, preserve = "single")) +
       scale_fill_manual(values = cols1) +
-      geom_text(aes(y=0,label=label), position=position_dodge(width=0.7),size=6,vjust = 1.5) +
-      facet_grid(depth.conf.factors ~ nSams, scales = 'free_y',space = "free_x")+
+      geom_text(aes(y=0,label=label), position=position_dodge(width=0.7),size=6,vjust = 1) +
+      facet_grid(nSams~depth.conf.factors, scales = 'free_y',space = "free_x")+
       ylab('FPs') + xlab('') +
       labs(color = "Methods", title = paste0('Default: no differential taxa (',covariate.type,')'), fill = '')+
-      thw +
+      thw +theme(legend.position = 'top') +
       scale_y_continuous(trans = sqrt_trans(),
                          breaks = trans_breaks("sqrt", function(x) x^2),
                          labels = trans_format("sqrt", math_format(.x^2)))+
       geom_hline(yintercept = 1, colour = 'red', linetype = 'dashed', size = 0.5) +
       labs(title = paste0(type.name,'_',covariate.type))
-    ggsave(paste0(output,filename,covariate.type,'_','V35_part1_barplot.pdf'),  width = 30, height = 15, dpi = 100)
-    
-    plt2 <- ggplot(res.df2 %>% filter(measures == measure & (methods %in% sub) & covariate.types ==covariate.type) %>% droplevels(), aes(x = nOTUs, y = value,  fill = legend)) +
-      theme_bw() +
-      geom_bar(position = position_dodge2(width = 0.7, preserve = "single"), stat="identity", width = 0.7) +
-      geom_errorbar(aes(ymax=ymax, ymin=ymin, linetype = NULL),  width=0.7, size = 0.2,position=position_dodge2(.7, preserve = "single")) +
-      scale_fill_manual(values = cols1) +
-      geom_text(aes(y=0,label=label), position=position_dodge(width=0.7),size=6,vjust = 1.5) +
-      facet_grid(depth.conf.factors ~ nSams, scales = 'free_y',space = "free_x")+
-      ylab('FPs') + xlab('') +
-      labs(color = "Methods", title = paste0('Default: no differential taxa (',covariate.type,')'), fill = '')+
-      thw +
-      scale_y_continuous(trans = sqrt_trans(),
-                         breaks = trans_breaks("sqrt", function(x) x^2),
-                         labels = trans_format("sqrt", math_format(.x^2)))+
-      geom_hline(yintercept = 1, colour = 'red', linetype = 'dashed', size = 0.5) +
-      labs(title = paste0(type.name,'_',covariate.type))
-    ggsave(paste0(output,filename,covariate.type,'_','V35_part2_barplot.pdf'),  width = 24, height = 15, dpi = 100)
+
+    ggsave(paste0(output,filename,covariate.type,'_','barplot.pdf'),  width = 26, height = 20, dpi = 100)
     
   }else{
     # Pwer plot: lineplot(only for power), boxplot, barplot
@@ -852,7 +836,7 @@ plot_sim <- function(filename = 'allC1',dir = 'SimulationEvaluation/',type = 'al
         scale_y_continuous(limits = c(0,1),expand = c(0.1, 0, 0, 0)) +
         facet_grid(as.formula(grid.formula), scales = 'free_y')+
         labs(y = 'TPR', x = '', color = "", fill = '') +
-        thw +
+        thw + 
         geom_text(aes(y=0, label=label), position=position_dodge(width=0.7),size=size, vjust = 1.5) +
         labs(title = paste0(type.name,'_',covariate.type))
 
