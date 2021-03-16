@@ -41,13 +41,14 @@ load('data/SimulationEvaluation/Vaginal.RData')
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 200, nSam = 50, model = 'loglinear')
 ```
 #### Effect of diff.otu.mode
+
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
                        diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
                        diff.otu.pct = 0.1, diff.otu.mode = 'rare', covariate.eff.mean = 0.5)
 ```
-```
+
 #### Effect of effect size
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
@@ -55,6 +56,7 @@ Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'logli
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
                        diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 1)
 ```
+
 #### Effect of sample size and taxa number
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 100, nSam = 50, model = 'loglinear', covariate.type = 'binary',
@@ -62,6 +64,7 @@ Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 100, nSam = 50, model = 'loglin
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
                        diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
 ```
+
 #### Effect of sequencing depth
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
@@ -71,6 +74,7 @@ Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'logli
                        diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
                        depth.mu = 50000)
 ```
+
 #### Effect of depth confounding
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
