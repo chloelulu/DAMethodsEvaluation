@@ -7,7 +7,7 @@ SimulateSeq(otu.tab, model ='loglinear',
             diff.otu.pct = 0.1, diff.otu.direct = 'balanced', diff.otu.mode = 'abundant',
             include.top.otu = FALSE, k.top.otu = 5, 
             covariate.type = "binary", covariate.eff.mean = 0.5, 
-            confounder.type = 'none', depth.mu = 10000, depth.conf.factor = 'none')
+            confounder.type = 'none', depth.mu = 10000, depth.conf.factor = 0)
 ```
 
 ### Arguments
@@ -20,12 +20,12 @@ SimulateSeq(otu.tab, model ='loglinear',
 - **`covariate.eff.mean`**:     effect size to be created between case group and control group.   
 - **`confounder.type`**:     covariate confounder. Options include *`none`*,  *`continuous`*, *`binary`*, *`both`*.   
 - **`depth.mu`**:     mu to generate the sequencing depth.  
-- **`depth.conf.factor`**:    a number indicates depth confounding strength. 
+- **`depth.conf.factor`**:    a number indicates depth confounding strength. If `0` is given, no depth confounding will be generated.
 
 
 ### Value 
 a list with components:
--  ***`otu.tab.sim`***:    a data.frame of simulated taxa.
+-  ***`otu.tab.sim`**:    a data.frame of simulated taxa.
 - **`X`**:    a vector of simulated covariate.
 - **`diff.otu.ind`**:   a vector of *`TRUE/FALSE`* indicates the truth of simulated differential taxa, `TRUE` means this taxon is differential taxon, while `FALSE` means this taxon is not differential taxon.
 - **`otu.names`**:    a vector of simulated taxa names.
