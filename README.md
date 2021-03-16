@@ -42,8 +42,16 @@ load('data/SimulationEvaluation/Vaginal.RData')
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 200, nSam = 50, model = 'loglinear')
 ```
-- #### Effect of diff.otu.mode
 
+- ######## Effect of signal density
+```
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.05, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.2, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
+```
+
+- #### Effect of diff.otu.mode
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
                        diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
