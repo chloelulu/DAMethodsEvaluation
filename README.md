@@ -4,7 +4,7 @@
 ```
 SimulateSeq(otu.tab, model ='loglinear',
             nSam = 100, nOTU = 500,
-            diff.otu.pct = 0.1, diff.otu.direct = 'balanced', diff.otu.mode = 'abundant',
+            diff.otu.pct = 0, diff.otu.direct = 'balanced', diff.otu.mode = 'abundant',
             include.top.otu = FALSE, k.top.otu = 5,
             covariate.type = "binary", covariate.eff.mean = 0,
             confounder.type = 'none', depth.mu = 10000, depth.conf.factor = 0)
@@ -15,7 +15,7 @@ SimulateSeq(otu.tab, model ='loglinear',
 - **`nOTU`** :    a number, indicates the number of taxa to be simulated.  Default is 500.
 - **`nSam`**:     a number, indicates the number of samples to be simulated.  Default is 100.
 - **`model`**:    indicates the relationship modeled between covariate and taxa. Options *`loglinear`*, *`heterogeneity`*, *`nonmonotone`*.
-- **`diff.otu.pct`**:     a numerical fraction between 0 and 1, indicates the percentage of differential taxa. Default is 0.1.   
+- **`diff.otu.pct`**:     a numerical fraction between 0 and 1, indicates the percentage of differential taxa. Default is 0.   
 - **`diff.otu.direct`**:     Options include *`balanced`*, *`unbalanced`*.  Default is *`balanced`*.
 - **`diff.otu.mode`**:    Options include *`abundant`*, *`rare`*, *`both`*. *`abundant`* means differential taxa come from top 1/4 abundant taxa, *`rare`* means differential taxa come from tail 1/4 abundant taxa, *`both`* means half of the differential taxa come from top 1/4 abundant taxa, while the rest half come from tail 1/4 abundant taxa.  Default is *`abundant`*.
 - **`include.top.otu`**: *`TRUE`* or *`FALSE`* will be used, respectively, indicates top n abundant taxa are differential taxa or not. Default is *`FALSE`*.
@@ -34,10 +34,49 @@ a list with components:
 - **`otu.names`**:    a vector of simulated taxa names.
 
 ### Simulation example
+#### NULL - no covariate and confounder effect
 ```
 source('code/SimulationEvaluation/Simulation.R')
 load('data/SimulationEvaluation/Vaginal.RData')
-Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 200, nSam = 50,
-                      covariate.eff.mean = 0, model = 'loglinear', nSub = 0,
-                      depth.conf.factor = 'none', covariate.type = 'binary')
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 200, nSam = 50, model = 'loglinear')
+```
+#### Effect of diff.otu.mode
+```
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'rare', covariate.eff.mean = 0.5)
+```
+```
+#### Effect of effect size
+```
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 1)
+```
+#### Effect of sample size and taxa number
+```
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 100, nSam = 50, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
+```
+#### Effect of sequencing depth
+```
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
+                       depth.mu = 5000)
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
+                       depth.mu = 50000)
+```
+#### Effect of depth confounding
+```
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
+                       depth.conf.factor = 0.5)
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
+                       depth.conf.factor = 1)
 ```
