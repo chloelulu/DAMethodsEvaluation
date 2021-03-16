@@ -15,8 +15,8 @@ SimulateSeq(otu.tab, model ='loglinear',
 - **`nOTU`** :    a number, indicates the number of taxa to be simulated.  
 - **`nSam`**:     a number, indicates the number of samples to be simulated.   
 - **`diff.otu.pct`**:     a numerical fraction between 0 and 1, indicates the percentage of differential taxa.   
-- **`diff.otu.direct`**:     Options include '*balanced*', '*unbalanced*'.  
-- **`diff.otu.mode`**:    Options include '*abundant*', '*rare*', '*both*'. '*abundant*' means differential taxa come from top 1/4 abundant taxa, '*rare*' means differential taxa come from tail 1/4 abundant taxa, '*both*' means half of the differential taxa come from top 1/4 abundant taxa, while the rest half come from tail 1/4 abundant taxa.  
+- **`diff.otu.direct`**:     Options include '*`balanced`*', '*`unbalanced`*'.  
+- **`diff.otu.mode`**:    Options include '*`abundant`*', '*rare*', '*both*'. '*abundant*' means differential taxa come from top 1/4 abundant taxa, '*rare*' means differential taxa come from tail 1/4 abundant taxa, '*both*' means half of the differential taxa come from top 1/4 abundant taxa, while the rest half come from tail 1/4 abundant taxa.  
 - **`covariate.eff.mean`**:     effect size to be created between case group and control group.   
 - **`confounder.type`**:     covariate confounder. Options include '*none*',  '*continuous*', '*binary*', '*both*'.   
 - **`depth.mu`**:     mu to generate the sequencing depth.  
