@@ -11,7 +11,7 @@ SimulateSeq(otu.tab, model ='loglinear',
 ```
 
 ### Arguments
-`otu.tab`  row are taxa, column are samples.
+`otu.tab`  row are taxa, column are samples. \n
 `nOTU`  a number, indicates the number of taxa to be simulated.
 `nSam`. a number, indicates the number of samples to be simulated.
 `diff.otu.pct `  a numerical fraction between 0 and 1, indicates the percentage of differential taxa.
