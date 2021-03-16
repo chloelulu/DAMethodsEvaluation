@@ -27,7 +27,7 @@ SimulateSeq(otu.tab, model ='loglinear',
 
 ### Value 
 a list with components:
--  ***`otu.tab.sim`**:    a data.frame of simulated taxa.
+- **`otu.tab.sim`**:    a data.frame of simulated taxa.
 - **`covariate`**:    a vector of simulated covariate.
 - **`diff.otu.ind`**:   a vector of *`TRUE/FALSE`* indicates the truth of simulated differential taxa, `TRUE` means this taxon is differential taxon, while `FALSE` means this taxon is not differential taxon.
 - **`otu.names`**:    a vector of simulated taxa names.
