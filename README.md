@@ -1,6 +1,6 @@
 ## ************ TO be updated
 
-### Main function of simulation function
+### Main function
 ```
 SimulateSeq(otu.tab, model ='loglinear',
             nSam = 100, nOTU = 500,
