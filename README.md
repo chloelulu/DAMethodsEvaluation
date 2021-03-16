@@ -1,4 +1,4 @@
-## A semi-parametric simulation framework for evaluation of microbial differential abundance analysis
+## ************ TO be updated
 
 ### Main function of simulation function
 ```
@@ -95,7 +95,7 @@ Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'logli
                        depth.conf.factor = 1)
 ```
 
-#### Effect of compostionality
+- #### Effect of compostionality
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
                        diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
