@@ -12,7 +12,7 @@ SimulateSeq(otu.tab, model ='loglinear',
 
 ### Arguments
 <pre>
-<b>otu.tab</b>, row are taxa, column are samples.   
+<b>otu.tab</b></pre>, row are taxa, column are samples.   
 `nOTU`     a number, indicates the number of taxa to be simulated.  
 `nSam`     a number, indicates the number of samples to be simulated.   
 `diff.otu.pct `     a numerical fraction between 0 and 1, indicates the percentage of differential taxa.   
@@ -22,7 +22,7 @@ SimulateSeq(otu.tab, model ='loglinear',
 `confounder.type`     covariate confounder. Options include 'none',  'continuous', 'binary', 'both'.   
 `depth.mu`     mu to generate the sequencing depth.  
 `depth.conf.factor`     depth confounding strength. Options include 'none'.  
-</pre>
+
 
 ### Value 
 a list with components:
