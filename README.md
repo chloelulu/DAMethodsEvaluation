@@ -94,3 +94,13 @@ Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'logli
                        diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
                        depth.conf.factor = 1)
 ```
+
+#### Effect of compostionality
+```
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
+                       diff.otu.direct = 'unbalanced')
+Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 300, nSam = 200, model = 'loglinear', covariate.type = 'binary',
+                       diff.otu.pct = 0.1, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5,
+                       diff.otu.direct = 'balanced', include.top.otu = T, k.top.otu = 5)
+```
