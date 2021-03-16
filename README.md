@@ -33,7 +33,7 @@ a list with components:
 - **`diff.otu.ind`**:   a vector of *`TRUE`* or *`FALSE`* indicates the truth of simulated differential taxa, *`TRUE`* means this taxon is differential taxon, while *`FALSE`* means this taxon is not differential taxon.
 - **`otu.names`**:    a vector of simulated taxa names.
 
-### Simulation example
+### Examples
 ```
 source('code/SimulationEvaluation/Simulation.R')
 load('data/SimulationEvaluation/Vaginal.RData')
@@ -43,7 +43,7 @@ load('data/SimulationEvaluation/Vaginal.RData')
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 200, nSam = 50, model = 'loglinear')
 ```
 
-- ######## Effect of signal density
+- #### Effect of signal density
 ```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 500, nSam = 100, model = 'loglinear', covariate.type = 'binary',
                        diff.otu.pct = 0.05, diff.otu.mode = 'abundant', covariate.eff.mean = 0.5)
