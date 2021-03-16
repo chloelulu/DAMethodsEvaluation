@@ -34,10 +34,12 @@ a list with components:
 - **`otu.names`**:    a vector of simulated taxa names.
 
 ### Simulation example
-- #### NULL - no covariate and confounder effect
 ```
 source('code/SimulationEvaluation/Simulation.R')
 load('data/SimulationEvaluation/Vaginal.RData')
+```
+- #### NULL - no covariate and confounder effect
+```
 Sim.obj <- SimulateSeq(otu.tab = otu.tab, nOTU = 200, nSam = 50, model = 'loglinear')
 ```
 - #### Effect of diff.otu.mode
