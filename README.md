@@ -24,7 +24,7 @@ SimulateSeq(otu.tab, model ='loglinear',
 
 ### Value 
 a list with components:
-- <***otu.tab.sim***>
+-  <pre><***otu.tab.sim***>
 
 
 ### Simulation example
